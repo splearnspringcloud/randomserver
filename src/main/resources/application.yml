@@ -2,3 +2,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${eurekahost}
+  instance:
+    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
