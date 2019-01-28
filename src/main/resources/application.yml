@@ -3,4 +3,5 @@ eureka:
     serviceUrl:
       defaultZone: ${eurekahost}
   instance:
-    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
+    hostname: ${HOST_NAME}
+    nonSecurePort: 80
